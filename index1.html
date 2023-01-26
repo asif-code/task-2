@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task - 2</title>
+  </head>
+  <body>
+    <h1>Task-2</h1>
+    <!-- Calulating Square Root -->
+    <h3>Calculating the Square Root</h3>
+    <button type="button" onclick="myfunction()">
+      Click Here to Calculate
+    </button>
+    <p id="sqrt"></p>
+    ____________________________________________________________________________
+
+    <script>
+      // Calulating Square Root
+      function myfunction() {
+        let a = prompt("Enter the value");
+        let b = (document.getElementById("sqrt").innerHTML = Math.sqrt(a));
+      }
+
+      // Capitalize the each words
+      const getWords = prompt("Enter the Words to capitalize");
+      const words = getWords.split(" ");
+      words
+        .map((words) => {
+          return words[0].toUpperCase() + words.substring(1);
+        })
+        .join(" ");
+
+      // Inserting an item into an array at a specific index
+      let getArray1 = prompt(Number("Numbers"));
+      let arr1 = prompt("Hello");
+      let fruits1 = ["Apple", "Bannana", "Watermelon", "Kiwi"];
+      fruits1.splice(getArray1, 0, arr1);
+      fruits1.join();
+
+      // Vowels
+      function vowels(string) {
+        const count = string.match(/[aeiou]/gi).length;
+        return count;
+      }
+      const string = prompt("Enter a string: ");
+      const result = vowels(string);
+      console.log(result);
+    </script>
+  </body>
+</html>

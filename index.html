@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Welcome to JS</h1>
+
+    <p id="demo">JS</p>
+    <button
+      type="button"
+      onclick="document.getElementById('demo').innerHTML = 'This is innerHTML !!'"
+    >
+      Click
+    </button>
+    <p>The length of the string</p>
+    <p id="len"></p>
+
+    <!-- Array -->
+    <h1>JS ARRAYS ___________________________</h1>
+    <button onclick="myfunction()">Click</button>
+    <p id="array"></p>
+
+    <script>
+      let text = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+      document.getElementById("len").innerHTML = text.length;
+
+      //   Array
+      const fruits = ["Bannana", "Orange", "Mango", "Kiwi"];
+      document.getElementById("array").innerHTML = fruits;
+
+      function myfunction() {
+        fruits[fruits.length] = prompt("Enter the Fruits in an Array");
+        document.getElementById("array").innerHTML = fruits;
+      }
+    </script>
+  </body>
+</html>
